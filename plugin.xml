@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" 
+        id="cordova-plugin-apns-push" 
+        version="1.0.0">
+
+  <name>APNSPushPlugin</name>
+  <description> This plugin allows your application to receive apple push notifications (APNS) on iOS devices. </description>
+  <license>MIT</license>
+  <js-module src="www/apnspush.js" name="APNSPushNotification">
+    <clobbers target="APNSPushNotification"/>
+  </js-module>
+  <engines>
+    <engine name="cordova" version=">=7.1.0"/>
+    <engine name="cordova-ios" version=">=4.5.0"/>
+  </engines>
+
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="APNSPushNotification">
+        <param name="ios-package" value="PushPlugin"/>
+      </feature>
+    </config-file>
+    <config-file target="*-Info.plist" parent="UIBackgroundModes">
+      <array>
+        <string>remote-notification</string>
+      </array>
+    </config-file>
+    <config-file target="*-Debug.plist" parent="aps-environment">
+      <string>development</string>
+    </config-file>
+    <config-file target="*-Release.plist" parent="aps-environment">
+      <string>production</string>
+    </config-file>
+    <source-file src="src/ios/AppDelegate+apnsnotification.m"/>
+    <source-file src="src/ios/APNSPushPlugin.m"/>
+    <header-file src="src/ios/AppDelegate+apnsnotification.h"/>
+    <header-file src="src/ios/APNSPushPlugin.h"/>
+    <framework src="PushKit.framework"/>
+  </platform>
+
+</plugin>

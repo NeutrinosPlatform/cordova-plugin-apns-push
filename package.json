@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-apns-push",
+  "description": "Register and receive APNS push notifications.",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeutrinosPlatform/cordova-plugin-apns-push"
+  },
+  "bugs": {
+    "url": "https://github.com/NeutrinosPlatform/cordova-plugin-apns-push/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-apns-push",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "ecosystem:phonegap",
+    "cordova-ios"
+  ],
+  "engines": {
+    "cordovaDependencies": {
+        "cordova": ">=7.1.0",
+        "cordova-ios": ">=4.5.0"
+    }
+  },
+  "author": "jatahworx",
+  "license": "MIT"
+}
