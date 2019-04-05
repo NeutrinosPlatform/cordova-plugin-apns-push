@@ -2,6 +2,10 @@
 
 > Register and receive APNS push notifications
 
+# Install
+
+Install via npm :-  `cordova plugin add cordova-plugin-apns-push`
+
 # Usage
 
 ```js 
