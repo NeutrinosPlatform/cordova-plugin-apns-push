@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" 
         id="cordova-plugin-apns-push" 
-        version="1.0.0">
+        version="1.0.1">
 
   <name>APNSPushPlugin</name>
   <description> This plugin allows your application to receive apple push notifications (APNS) on iOS devices. </description>

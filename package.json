@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-apns-push",
   "description": "Register and receive APNS push notifications.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/NeutrinosPlatform/cordova-plugin-apns-push"
